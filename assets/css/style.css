@@ -1,0 +1,527 @@
+/* Configurações gerais */
+@font-face {
+    font-family: 'Motiva Sans';
+    src: url('fonte/MotivaSans-Regular_woff.ttf') format('opentype');
+}
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	color: none;
+}
+
+body{
+    background-color: #181A21;
+}
+
+li {
+	color: #AFAFAF;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	margin-top: 5px;
+	font-size: 14px;
+}
+
+p { 
+	font-family: "Motiva Sans", Sans-serif;
+	color: rgba(255, 255, 255, .6); 
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+/* IDS */
+#idCabecalho{
+    width:1900px;
+    height:104px;
+    font-family: "Motiva Sans", Sans-serif;
+    font-size: 14px;
+    /* border: solid pink 1px; */
+}
+
+#idPagina{
+	width: 1900px;
+	height: 655px;
+	background-image: url(imagens/steamBackground.jpg);
+}
+
+#idCheckbox{
+	width: 400px;
+	height: 20px;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+}
+
+#opcoesSupMenu {
+	line-height: 24px;
+	vertical-align: top;
+	display: inline-block;
+	margin-left:100px;
+}
+
+#opcoesSup {
+	right: 0px;
+	top: 6px;
+
+	height: 21px;
+	line-height: 21px;
+
+	color: #b8b6b4;
+	font-size: 11px;
+}
+
+#resultadoSenha{
+	margin-left: 20px;
+	margin-top: 25px;
+	font-family: "Motiva Sans", Sans-serif;
+    font-size: 16px;
+	color: #AFAFAF;
+}
+
+#forcaSenha{
+	font-family: "Motiva Sans", Sans-serif;
+	margin-left: 20px;
+	margin-top: 25px;
+    font-size: 14px;
+	letter-spacing: 1px;
+}
+
+#senha, #repitaSenha{
+	padding: 12px;
+	width: 400px;
+	background-color: #32353C;
+	color: white;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 14px;
+	border-radius: 3px;
+	border: none;
+	box-shadow: none;
+}
+
+#usuario{
+	padding: 12px;
+	width: 400px;
+	background-color: #32353C;
+	color: white;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 14px;
+	border-radius: 3px;
+	border: none;
+	box-shadow: none;
+}
+
+#checkmark{
+	height: 20px;
+	width: 20px;
+	margin-top: 10px;
+	border: solid red 1px;
+}
+
+/* Classes */
+
+.botaoInstalar {
+    display: inline-block;
+	position: relative;
+	height: 21px;
+	line-height: 24px;
+	margin-right: 3px;
+}
+
+.botaoInstalarVerde{
+    background-color: #5c7e10;
+}
+
+.botaoInstalarConteudo{
+	display: inline-block;
+	padding-left: 35px;
+	padding-right: 9px;
+	background-position: 10px 5px;
+
+	background-image: url( 'https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1' );
+	background-repeat:	no-repeat;
+	text-decoration: none;
+	color: #e5e4dc;
+	font-weight: normal;
+}
+
+.idioma{
+    padding-left: 5px;
+    padding-right: 18px;
+}
+
+.botaoBaixo{
+    padding-right: 20px;
+    background-image: url( 'https://store.akamai.steamstatic.com/public/shared/images/popups/btn_arrow_down_padded.png' );
+    background-repeat: no-repeat;
+}
+
+.corOpcoes{
+    padding: 0px 4px;
+	color: #B8B6B4
+}
+
+.conteudoCabecalho{
+    width:940px;
+    height:104px;
+    margin: 0px auto;
+    /* border: solid red 1px; */
+}
+
+.logo{
+    float: left;
+	padding-top: 30px;
+	margin-right: 40px;
+	width: 176px;
+	height: 44px;
+}
+
+.itemMenu{
+	padding-top: 45px;
+	padding-left: 7px;
+	padding-right: 7px;
+	padding-bottom: 7px;
+
+	float: left;
+	color: #dcdedf;
+	font-size: 16px;
+    font-family: "Motiva Sans", "Twemoji", "Noto Sans", Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.itemMenuAtivo{
+    color: #1a9fff;
+}
+
+.linha{
+    float:left;
+    width: 38px;
+    margin-top: 65px;
+    margin-left: -47px;
+    border: solid #1a9fff 2px;
+    border-radius: 25px;
+}
+
+
+.fonteInstalar{
+    background-color: #5C7E10;
+    color:white;
+    border: solid red 1px;
+}
+
+.fonteCinza{
+    color:#B8B6B4;
+}
+
+.conteudoCorpo{
+	padding-top: 85px;
+    width:700px;
+    height:375px;
+    margin: 0px auto;
+    /* border: solid red 1px; */
+}
+
+.fonteIniciar{
+	color:white;
+	margin-bottom: 30px;
+	margin-left: -100px;
+	padding-left: 10px;
+	font-size: 28px;
+	font-weight: bolder;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	/* border: solid red 1px; */
+}
+
+/* .menuFormulario{
+	background-color: #181A21;
+	width:700px;
+	height: 335px;
+	margin: auto;
+	border-radius: 3px;
+} */
+
+.menuFormulario{
+	background-color: #181A21;
+	width:900px;
+	height: 405px;
+	margin-left: -100px;
+	border-radius: 3px;
+}
+
+/* .formulario{
+	width:650px;
+	height: 280px;
+	margin: auto;
+} */
+
+.formulario{
+	width:450px;
+	height: 400px;
+	margin-left: 30px;
+	width: 50%;
+}
+
+.fonteUsuarioQr{
+	color: #1999FF;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	padding: 30px 2px 2px 2px;
+}
+
+.campos{
+	padding: 12px;
+	width: 400px;
+	background-color: #32353C;
+	color: white;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 14px;
+	border-radius: 3px;
+	border: none;
+	box-shadow: none;
+}
+
+.fonteSenha{
+	color: #AFAFAF;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	padding: 2px;
+	margin-top: 13px;
+}
+
+.fonteLembrar{
+	color: #AFAFAF;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	margin-top: 10px;
+	display: inline;
+	/* border: solid red 1px; */
+}
+
+.iniciarSessao{
+	width: 400px;
+	height: 50px;
+	margin: 20px 0px 20px 80px;	
+}
+
+.botao{
+	padding: 12px;
+	width: 270px;
+	background-image: linear-gradient(to right,  #06bfff ,#265bce);
+	text-align: center;
+	height: 50px;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	color: white;
+	border-radius: 3px;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.problemaSessao{
+	display: inline-block;
+	color: #AFAFAF;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	margin-top: 30px;
+	margin-left: 50px;
+	padding: 5px;
+	text-decoration: underline;
+}
+
+.qrCode{
+	display: inline-block;
+}
+
+.loginBaixo{
+	padding-top:200px;
+	width: 1900px;
+	height: 150px;
+}
+
+.primeiroLogin{
+	margin-top: 50px;
+	margin-left: 720px;
+	font-size: 20px;
+	color: white;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-weight: bolder;
+	letter-spacing: 1px;
+	display:inline-block;
+}
+
+.saibaMais{
+	width: 300px;
+	color: #B8B6B4;
+	font-size: 14px;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	display: inline-block;
+	text-align:center;
+	margin-left: 40px;
+}
+
+.cadastrar{
+	margin-top: 20px;
+	margin-left: 45px;
+	width: 170px;
+	height: 50px;
+}
+
+.botaoCadastrar{
+	padding: 0px 20px;
+	width: 150px;
+	background-image: linear-gradient(to right,  #06bfff ,#265bce);
+	text-align: center;
+	height: 35px;
+	font-size: 15px;
+	font-weight: 500;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	color: white;
+	border-radius: 3px;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+}
+
+.maisSteam{
+	display: inline-block;
+	color: #AFAFAF;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 5px;
+	text-decoration: underline;
+}
+
+.rodape{
+	width: 1900px;
+	height: 300px;
+}
+
+.conteudoRodape{
+	color: green;
+}
+
+.linhaCinza{
+    width: 900px;
+    margin-top: 80px;
+    margin-left: 530px;
+    border: solid rgba(184, 182, 180, 0.2) 1px;
+    border-radius: 25px;
+}
+
+.logoSteam{
+	float: right;
+	margin-right: 470px;
+	/* margin-top: -15px; */
+}
+
+.logoValve{
+	margin-left: 531px;
+	/* margin-top: -15px; */
+}
+
+.fonteRodape{
+	color: #8F98A0;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	margin-left: 540px;
+}
+
+.fonteLinkRodape{
+	color: #C6C4DF;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.linhaCinza2{
+    width: 900px;
+    margin-top: 17px;
+    margin-left: 530px;
+    border: solid rgba(184, 182, 180, 0.2) 1px;
+    border-radius: 25px;
+}
+
+.links{
+	margin-top: 20px;
+	margin-left: 530px;
+}
+
+.linksValve{
+	color: #C6C4DF;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.repitaSenha{
+	color: #AFAFAF;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	padding: 2px;
+	margin-top: 13px;
+}
+
+.campoRepetir{
+	padding: 12px;
+	margin-left: 50px;
+	width: 400px;
+	background-color: #32353C;
+	color: white;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 14px;
+	border-radius: 3px;
+	border: none;
+	box-shadow: none;
+}
+
+.ladoDireitoForm{
+	width:450px;
+	height: 400px;
+	color: white;
+	width: 45%;
+	/* border: 1px solid red; */
+}
+
+.formulario, .ladoDireitoForm {
+    display: inline-block;
+    vertical-align: top; /* Isso garante que ambos os elementos fiquem alinhados no topo */
+    height: 400px;
+    color: white;
+    /* border: 1px solid red; */
+}
+
+.forcaSenhaCor {
+    margin: 20px;
+    width: 335px;
+    height: 5px;
+    background-color: #32353C;
+    border-radius: 10px;
+}
+
+.indicador {
+	width: 100px;
+    height: 5px;
+    background-color: #32353C;
+    transition: 500ms ease-in-out width;
+}
+
+.regras{
+	color: #1999FF;
+	font-family: "Motiva Sans", Helvetica, sans-serif;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+

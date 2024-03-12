@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" = href="assets/css/imagens/steamlogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Iniciar sessão</title>
+
+</head>
+
+<body>
+    <!-- Cabeçalho / Menu superior -->
+    <div id="idCabecalho">
+        <div class="conteudoCabecalho">
+            <!-- Logo -->
+            <div class="logo">
+                <span>
+                    <img src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016" width="176" height="44" alt="Link para a página inicial do Steam">
+                </span>
+            </div>
+            <!-- Menu -->
+            <div>  
+                <a href="https://store.steampowered.com/" class="itemMenu itemMenuAtivo">LOJA</a>
+                <hr class="linha">
+                <a href="https://steamcommunity.com/" class="itemMenu">COMUNIDADE</a>
+                <a href="https://store.steampowered.com/about/" class="itemMenu">SOBRE</a>
+                <a href="https://help.steampowered.com/pt-br/" class="itemMenu">SUPORTE</a>
+            </div>
+            <!-- Instale / Iniciar/ Idioma -->
+
+            <div id="opcoesSup">
+                <div id="opcoesSupMenu">
+                    <span class="botaoInstalar botaoInstalarVerde"><a href="https://store.steampowered.com/about/" class="botaoInstalarConteudo">Instale o Steam</a></span>
+                    <a href="https://store.steampowered.com/login/?redir=about%2F%3Fsnr%3D1_14_4__global-header&redir_ssl=1&snr=1_14_4__global-header" class="corOpcoes">iniciar sessão</a>
+                    <span>|</span>
+                    <a href="" class="idioma corOpcoes">idioma</a>
+                    <span class="botaoBaixo"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Conteúdo Página -->
+    <div id="idPagina">
+        <div class="conteudoCorpo">
+            <div class="fonteIniciar">Iniciar sessão</div>
+            <div class="menuFormulario">
+                <form>
+                    <!-- Campos -->
+                    <div class="formulario">
+                        <div class="fonteUsuarioQr">INICIAR SESSÃO COM O NOME DE USUÁRIO</div>
+                        <input type="text" id="usuario">
+                        <div class="fonteSenha">SENHA</div>
+                        <input type="password" id="senha">
+                        <div class="fonteSenha">REPITA A SENHA</div>
+                        <input type="password" id="repitaSenha">
+
+                    <!-- Checkbox lembrar de mim-->
+                        <div id="idCheckbox">
+                            <input type="checkbox" value="lembreDeMim" id="checkmark">
+                            <div class="fonteLembrar">Lembre-me</div>
+                        </div>
+
+                    <!-- Botão sessão -->
+                        <div class="iniciarSessao">
+                            <button type="button" class="botao" onclick="compararSenhas()">Iniciar sessão</button>
+                            <a class="problemaSessao" href="https://help.steampowered.com/pt-br/wizard/HelpWithLogin?redir=https%3A%2F%2Fstore.steampowered.com%2Flogin%2F%3Fredir%3D%253Fl%253Dportuguese%26redir_ssl%3D1%26snr%3D1_4_4__global-header">
+                                Não consigo iniciar a sessão</a>
+                        </div>
+                    </div>
+
+                    <div class="ladoDireitoForm">
+                        <div id="resultadoSenha">Por favor, digite sua senha</div>
+                        <div class="forcaSenhaCor">
+                            <div class="indicador"></div>
+                        </div>
+                        <p>Força da Senha: <span id="forcaSenha"></span></p>   
+                        <div class="regras">SUA SENHA DEVE CONTER:
+                            <ul>
+                                <li>8 caracteres</li>
+                                <li>1 caractere especial</li>
+                                <li>1 letra maiúscula</li>
+                                <li>1 número</li>
+                            </ul>
+                        </div>     
+                    </div>
+                </form>    
+            </div>
+
+            
+        </div>
+        <!-- Rodapé primeiro login -->
+        <div class="loginBaixo">
+            <div class="primeiroLogin">
+                <div>Primeira vez no Steam?</div>
+                <div class="cadastrar">
+                    <button type="submit" class="botaoCadastrar">Cadastrar-se</button>
+                </div>
+            </div>
+            <div class="saibaMais">É gratuito e fácil. Descubra milhares de jogos para jogar com milhões de novos amigos.
+                <a class="maisSteam" href="https://store.steampowered.com/about">Saiba mais sobre o Steam</a>
+            </div>
+        </div>
+        <!-- Rodapé direitos e outros links -->
+        <div class="rodape">
+            <div class="conteudoRodape">
+                <hr class="linhaCinza">
+                <div class="logoSteam"><img src="https://store.akamai.steamstatic.com/public/images/v6/logo_steam_footer.png" width="88" height="25" alt="Valve Software" border="0"></div>
+                <div class="logoValve"><img src="https://store.akamai.steamstatic.com/public/images/footerLogo_valve_new.png" width="92" height="26"alt="Valve Software" border="0"></div>
+                <div class="fonteRodape">© 2024 Valve Corporation. Todos os direitos reservados. Todas as marcas são propriedade dos seus respectivos donos nos EUA e em outros países.</div>
+                <div class="fonteRodape">IVA incluso em todos os preços onde aplicável.
+                    <a href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_" class="fonteLinkRodape">Política de Privacidade | </a>
+                    <a href="https://store.steampowered.com/legal/?snr=1_44_44_" class="fonteLinkRodape">Termos Legais | </a>
+                    <a href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_" class="fonteLinkRodape" >Acordo de Assinatura do Steam | </a>
+                    <a href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_" class="fonteLinkRodape">Reembolsos | </a>
+                    <a href="https://store.steampowered.com/account/cookiepreferences/?snr=1_44_44_" class="fonteLinkRodape">Cookies</a>
+                </div>
+                <hr class="linhaCinza2">
+                <div class="links">
+                    <a href="http://www.valvesoftware.com/about" class="linksValve">Sobre a Valve | </a>
+                    <a href="http://www.valvesoftware.com" class="linksValve">Empregos | </a>
+                    <a href="http://www.steampowered.com/steamworks/" class="linksValve">Steamworks | </a>
+                    <a href="https://partner.steamgames.com/steamdirect" class="linksValve">Distribuição no Steam | </a>
+                    <a href="https://help.steampowered.com/pt-br/?snr=1_44_44_" class="linksValve">Suporte | </a>
+                    <a href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_" class="linksValve">Vales-presente | </a>
+                    <a href="https://steamcommunity.com/linkfilter/?u=http%3A%2F%2Fwww.facebook.com%2FSteam" class="linksValve"><img src="https://store.akamai.steamstatic.com/public/images/ico/ico_facebook.png" alt="Facebook"> Steam  | </a>
+                    <a href="http://twitter.com/steam" class="linksValve"><img src="https://store.akamai.steamstatic.com/public/images/ico/ico_twitter.png" alt="X"> @steam</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Arquivo JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
